@@ -34,7 +34,7 @@ h1{
 
 .image{
   position: relative;
-  display:inline-block;
+  display:flex;
   transition: all 0.8s;
 }
 .date{
@@ -43,7 +43,7 @@ h1{
 	top: 0px;
 	right: 0px;
 	padding-top: 5px;
-	padding-right: 5px;
+	padding-right: 9px;
 }
 
 .image:hover{
@@ -63,10 +63,13 @@ img{
   border: 1px solid grey;
   width: 400px;
   height:400px;
-  box-shadow: 0px 0px 20px 0px black;
+  box-shadow: 0px 0px 10px 0px black;
 }
 .text-img{
-  font-size: 13px;
+  font-size: 15px;
+  color: #52618d;
+  padding: 10px;
+  margin:auto
 }
 
 figcaption{
@@ -74,8 +77,7 @@ figcaption{
   position: relative;
   opacity: 0;
   height: 10px;
-  text-align:center;
-  background-color: #ffffff94;
+  background-color: #ebe3e394;
   transition: 0.8s;
 }
 
@@ -101,4 +103,25 @@ content:' - ';
 a{
   text-decoration:none;
   color:#52618d;
+}
+
+@media  screen and (max-width: 550px){
+  #img-1{
+    width: 300px;
+  }
+  #img-6{
+    width: 300px;
+  }
+  #fig-1{
+    width: 300px;
+  }
+  #fig-6{
+    width: 300px;
+  }
+  figcaption p{
+    max-width: 300px;
+  }
+  img{
+    width: 300px;
+  }
 }

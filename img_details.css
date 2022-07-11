@@ -20,7 +20,6 @@ hr{
     justify-content: center;
     gap: 40px;
     padding: 50px;
-    height: 700px;
 }
 img{
     position: relative;
@@ -33,4 +32,20 @@ img{
     font-size: 25px;
     background-color: rgb(243, 247, 250);
     max-width: 400px;
+}
+
+@media  screen and (max-width: 550px){
+
+    .img-container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        padding: 0;
+    }
+    img{
+        min-width: 300px;
+    }
+
+
+
 }
