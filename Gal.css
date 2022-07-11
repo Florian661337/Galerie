@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+body{
+  text-align:center;
+  vertical-align:center;
+  background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+}
+
+.container-image {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 5px;
+	margin-top: 50px;
+}
+
+.image{
+  position: relative;
+  display:inline-block;
+  transition: all 0.8s;
+}
+.date{
+	position: absolute;
+  font-size: 14px;
+	top: 0px;
+	right: 0px;
+	padding-top: 5px;
+	padding-right: 5px;
+}
+
+.image:hover{
+transform:scale(1.1);
+z-index: 99;
+}
+
+figure{
+  font-family:'Ubuntu';
+  font-size:20px;
+  color:#282828;
+  margin:0;
+  margin-bottom:30px;
+}
+
+img{
+  border: 1px solid grey;
+  width: 400px;
+  height:400px;
+  box-shadow: 0px 0px 20px 0px black;
+}
+
+figcaption{
+  z-index:100;
+  position: relative;
+  opacity: 0;
+  height: 10px;
+  text-align:center;
+  background-color: #ffffff94;
+  transition: 0.8s;
+}
+
+figcaption p{
+	max-width: 400px;
+}
+
+.image:hover figcaption{
+	opacity : 1;
+	height: 100px;
+  border-radius: 2px;
+	transition: opacity 0.8s, height 0.8s;
+	}
+
+span{
+  font-style:italic;
+  font-size:15px;
+}
+span:before{
+content:' - ';
+}
+
+a{
+  text-decoration:none;
+  color:#52618d;
+}
