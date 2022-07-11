@@ -48,6 +48,7 @@ p > span {
     }
     .description{
        width: 300px;
+       font-size: 18px
     }
     .top-hr{
         margin-bottom: 30px;
