@@ -3,7 +3,9 @@
 body{
   text-align:center;
   vertical-align:center;
-  background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  /* background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d); */
+  background-color: white;
+  font-family:'Ubuntu';
 }
 
 .container-image {
@@ -11,8 +13,23 @@ body{
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: 5px;
+	gap: 10px;
 	margin-top: 50px;
+}
+h1{
+  color: rgb(73, 73, 73);
+}
+#img-1{
+  width: 700px;
+}
+#img-6{
+  width: 700px;
+}
+#fig-1{
+  width: 700px;
+}
+#fig-6{
+  width: 700px;
 }
 
 .image{
@@ -47,6 +64,9 @@ img{
   width: 400px;
   height:400px;
   box-shadow: 0px 0px 20px 0px black;
+}
+.text-img{
+  font-size: 13px;
 }
 
 figcaption{
