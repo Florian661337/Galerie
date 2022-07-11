@@ -19,6 +19,9 @@ body{
 h1{
   color: rgb(73, 73, 73);
 }
+hr{
+  width: 50%;
+}
 #img-1{
   width: 700px;
 }

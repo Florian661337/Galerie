@@ -3,10 +3,6 @@
 h1{
     text-align: center;
     font-family:'Ubuntu';
-    
-}
-hr{
-    width: 50%;
 }
 .main{
     font-family:'Ubuntu';
@@ -20,32 +16,41 @@ hr{
     justify-content: center;
     gap: 40px;
     padding: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 img{
     position: relative;
    border: 1px solid grey;
-   min-width: 400px;
+   width: 27%;
    border-radius: 2px;
    box-shadow: 0px 0px 20px 0px black;
 }
 .description{
     font-size: 25px;
     background-color: rgb(243, 247, 250);
-    max-width: 400px;
+    width: 400px;
+}
+p > span {
+    font-weight: bold;
 }
 
-@media  screen and (max-width: 550px){
+@media  screen and (max-width: 700px){
 
     .img-container{
         flex-direction: column;
         justify-content: center;
         gap: 5px;
-        padding: 0;
+        align-items: center;
     }
     img{
-        min-width: 300px;
+      width: 300px;
     }
-
-
+    .description{
+       width: 300px;
+    }
+    .top-hr{
+        margin-bottom: 30px;
+    }
 
 }
