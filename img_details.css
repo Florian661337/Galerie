@@ -1,8 +1,25 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
 
 h1{
-    text-align: center;
     font-family:'Ubuntu';
+}
+hr{
+    width: 50%;
+}
+.top-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+}
+.retour{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    gap: 4px;
+    font-size: 20px;
 }
 .main{
     font-family:'Ubuntu';
@@ -24,7 +41,7 @@ img{
    border: 1px solid grey;
    width: 27%;
    border-radius: 2px;
-   box-shadow: 0px 0px 20px 0px black;
+   box-shadow: 0px 0px 5px 0px black;
 }
 .description{
     font-size: 25px;
