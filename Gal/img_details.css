@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
 
+body{
+    background: url('pexels-sharon-mccutcheon-1148399.jpg');
+    background-size: cover;
+}
 h1{
     font-family:'Ubuntu';
 }
@@ -37,7 +41,7 @@ hr{
     padding-right: 30px;
 }
 img{
-    position: relative;
+   position: relative;
    border: 1px solid grey;
    width: 27%;
    border-radius: 2px;
@@ -45,8 +49,10 @@ img{
 }
 .description{
     font-size: 25px;
-    background-color: rgb(243, 247, 250);
+    background-color: rgb(110, 162, 201);
     width: 400px;
+    padding: 15px;
+    border-radius: 2px;
 }
 p > span {
     font-weight: bold;
