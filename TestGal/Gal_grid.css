@@ -1,3 +1,14 @@
+@import url('http://fonts.cdnfonts.com/css/warlow-sans');
+h1{
+  font-size: 2.2rem;
+  text-align: center;
+  font-family: 'Warlow Sans', sans-serif;
+}
+hr{
+  width: 55%;
+  margin-bottom: 15px;
+  background-color: black;
+}
 .image-mosaic {
     display: grid;
     gap: 1rem;
@@ -13,7 +24,7 @@
     background: #353535;
     font-size: 3rem;
     color: #fff;
-    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.40rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
     height: 100%;
     width: 100%;
     border-radius: 4px;
