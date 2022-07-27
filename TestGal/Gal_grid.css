@@ -48,6 +48,8 @@ hr{
     padding-left:5%;
     color: aliceblue;
     transition: transform 0.8s;
+    font-family: 'Warlow Sans', sans-serif;
+    font-size: 14px;
 
   }
   .card:hover p{

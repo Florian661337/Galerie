@@ -53,6 +53,7 @@ img{
     width: 400px;
     padding: 15px;
     border-radius: 2px;
+    font-family:'Ubuntu';
 }
 p > span {
     font-weight: bold;
