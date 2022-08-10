@@ -8,10 +8,25 @@
     <title>Document</title>
 </head>
 <body>
-
   <h1>Galerie photos</h1>
   <hr>
     <div class="image-mosaic">
+    <?php
+      require('connexion.php');
+      $query = "SELECT * FROM galerie ORDER BY id DESC LIMIT 15";
+      $req = $connexion->prepare($query);
+      $req->execute();
+      $gal = $req->fetchAll(PDO::FETCH_ASSOC);
+    ?>
+    <?php foreach($gal as $value): ?>
+      <div
+          class="card <?= $value['class'] ?>"
+          style="background-image: url('../../AdminPanel/img/<?= $value['img'] ?>');"
+          onclick="open_window(`../../AdminPanel/img/<?= $value['img'] ?>`)"
+        >
+        <p class="text-card"><?= $value['description'] ?><br><a class="lien-sup" href="#">Par ici</a></p>
+      </div>
+      <?php endforeach; ?>
         <div
           class="card card-tall card-wide"
           style="background-image: url('https://picsum.photos/id/564/1200/800')"
@@ -22,7 +37,7 @@
         <div
           class="card card-tall"
           style="background-image: url('https://picsum.photos/id/566/800/530')"
-        ><p class="text-card"></p></div>
+        ><p class="text-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nobis explicabo laudantium est repellendus asperiores consequatur fuga tempore ipsam. Voluptatum rerum repellat unde, explicabo eaque ullam aliquam aut quam nam.</p></div>
         <div
           class="card"
           style="background-image: url('https://picsum.photos/id/575/800/530')"
@@ -47,24 +62,9 @@
           class="card"
           style="background-image: url('https://picsum.photos/id/683/800/530')"
         ><p class="text-card"></p></div>
-        <div
-          class="card"
-          style="background-image: url('https://picsum.photos/id/693/800/530')"
-        ><p class="text-card"></p></div>
-        <div
-          class="card"
-          style="background-image: url('https://picsum.photos/id/715/800/530')"
-        ><p class="text-card"></p></div>
-        <div
-          class="card"
-          style="background-image: url('https://picsum.photos/id/610/800/530')"
-        ><p class="text-card"></p></div>
-        <div
-          class="card"
-          style="background-image: url('https://picsum.photos/id/599/800/530')"
-        ><p class="text-card"></p></div>
+        
       </div>
-
+  
       <script>
         function open_window(votre_page)
 				{

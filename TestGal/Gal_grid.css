@@ -1,4 +1,45 @@
 @import url('http://fonts.cdnfonts.com/css/warlow-sans');
+.image-mosaic {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 240px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #353535;
+  font-size: 3rem;
+  color: #fff;
+  box-shadow: rgba(3, 8, 20, 0.3) 0px 0.40rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  transition: all 500ms;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+}
+ .text-card{
+  transform-origin: 0 100%;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0);
+  margin-bottom: 0px;
+  padding-top: 10%;
+  padding-bottom:20%;
+  padding-left:5%;
+  color: aliceblue;
+  transition: transform 0.8s;
+  font-family: 'Warlow Sans', sans-serif;
+  font-size: 14px;
+
+}
 h1{
   font-size: 2.2rem;
   text-align: center;
@@ -9,62 +50,18 @@ hr{
   margin-bottom: 15px;
   background-color: black;
 }
-.image-mosaic {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-auto-rows: 240px;
-  }
-  
-  .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #353535;
-    font-size: 3rem;
-    color: #fff;
-    box-shadow: rgba(3, 8, 20, 0.3) 0px 0.40rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
-    height: 100%;
-    width: 100%;
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-    transition: all 500ms;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 0;
-    margin: 0;
-  }
-   .card > p{
-    transform-origin: 0 100%;
-    width: 100%;
-    height: 100%;
-    transform: scaleY(0);
-    margin-bottom: 0px;
-    font-size: x-large;
-    padding-top: 10%;
-    padding-bottom:20%;
-    padding-left:5%;
-    color: aliceblue;
-    transition: transform 0.8s;
-    font-family: 'Warlow Sans', sans-serif;
-    font-size: 14px;
-
-  }
-  .card:hover p{
-    transform: scaleY(0.75);
-    background-color: #35353555;
-  }
-  .card:not(:hover) p{
-    transform: scaleY(0);
-    background-color: #35353555;
-  }
-  p > a {
-    text-decoration: none;
-    color: #161616;
-  }
-  
+.card:hover .text-card{
+  transform: scaleY(0.75);
+  background-color: #35353555;
+}
+.card:not(:hover) .text-card{
+  transform: scaleY(0);
+  background-color: #35353555;
+}
+.lien-sup {
+  text-decoration: none;
+  color: #161616;
+}
   @media screen and (min-width: 600px) {
     .card-tall {
       grid-row: span 2 / auto;
