@@ -1,3 +1,10 @@
+<?php
+      require('connexion.php');
+      $query = "SELECT * FROM galerie ORDER BY id DESC LIMIT 15";
+      $req = $connexion->prepare($query);
+      $req->execute();
+      $gal = $req->fetchAll(PDO::FETCH_ASSOC);
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,13 +18,6 @@
   <h1>Galerie photos</h1>
   <hr>
     <div class="image-mosaic">
-    <?php
-      require('connexion.php');
-      $query = "SELECT * FROM galerie ORDER BY id DESC LIMIT 15";
-      $req = $connexion->prepare($query);
-      $req->execute();
-      $gal = $req->fetchAll(PDO::FETCH_ASSOC);
-    ?>
     <?php foreach($gal as $value): ?>
       <div
           class="card <?= $value['class'] ?>"
